@@ -1,0 +1,55 @@
+\documentclass[11pt,legalpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+
+\author{Alexander Gallardo}
+\title{Apuntes de \LaTeX{} 2}
+\date{}
+
+\begin{document}
+	\maketitle
+	\begin{flushleft}%Alineación a la izquierda
+		\section{Ejercicio} %Seccion 1
+			Para obtener una simple tabla sin lineas:
+			\begin{center}%Centra la tabla
+				\begin{tabular}{l c r}
+					1 & 2 & 3\\
+					4 & 5 & 6\\
+					7 & 8 & 9\\	
+				\end{tabular}
+			\end{center}
+		\section{Ejercicio}
+		 Para obtener esta tabla en la que añadimos algunas lineas verticales:\\
+			\begin{center}
+				\begin{tabular}{l| c|| r|}
+					1 & 2 & 3\\
+					4 & 5 & 6\\
+					7 & 8 & 9\\	
+				\end{tabular}
+			\end{center}
+		\section{Ejercicio}
+		Ahora con lineas horizontales: superior e inferior\\
+			\begin{center}
+				\begin{tabular}{l| c|| r|}
+					\hline
+						1 & 2 & 3\\
+						4 & 5 & 6\\
+						7 & 8 & 9\\
+					\hline	
+				\end{tabular}
+			\end{center}
+		\section{Ejercicio}
+		Ahora añadir lineas centradas entre todas las filas (usamos el entorno \textbf{center})
+			\begin{center}
+				\begin{tabular}{l| c|| r|}
+					\hline
+					10 & 22 & 33\\ \hline
+					44 & 55 & 66\\ \hline
+					77 & 88 & 99\\
+					\hline	
+				\end{tabular}
+			\end{center}
+	\end{flushleft}
+\end{document}

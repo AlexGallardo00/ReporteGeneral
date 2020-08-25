@@ -1,0 +1,173 @@
+\documentclass[a4papper, 12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage[usenames]{color}
+\usepackage{xcolor, colortbl}
+%\usepackage{array, multirow, multicol}
+
+%En esta seccion se define los colores
+\definecolor{skyblue6}{rgb}{.2, .6, .8}
+\definecolor{firebrick}{rgb}{.7, .13, .13}
+\definecolor{blueice}{rgb}{.85, .96, .94}
+\definecolor{lightcopper}{rgb}{.93, .76, .58}
+\definecolor{azulclaro}{rgb}{0, 193, 255  }
+\definecolor{gray}{rgb}{.189, .189, .189 }
+\definecolor{white}{gray}{1}
+\definecolor{yellow}{rgb}{255, 236, 0}
+\definecolor{red}{rgb}{255, 0, 0}
+
+
+\newtheorem{definition}{Definición}%Definicion
+
+\title{Universidad tecnológica intercontinental}
+\title{Taller de Operación}
+\author{Alexander Gallardo}
+\date{}
+
+
+
+\begin{document}
+	\maketitle
+		
+	\begin{abstract}
+		Las ciencias de la computación, son aquellas que abarcan las bases teóricas de la informacón y la computación, así como su aplicación en sistemas computacionales.
+	\end{abstract}
+%---------------------------------------------------------------------------
+	\section{El corazón de la computadora}
+		La CPU, a menudo llamada sólo procesador, realiza las transformaciones de entrada y salida. Cada computadora tiene al menos una CPU para interpretar y ejecutar las instrucciones de cada programa para hacer manipulaciones aritmética y lógica de datos, y para comunicarse con las otras partes del sistema indirectamente a través de la memoria.
+		
+		\begin{definition}
+			El microprocesador que constituye la unidad central de procesamiento de una computadora, o CPU es el cerebro, el mensajero, maestro de ceremonias y jefe de la computadora; Todos los demás componentes (RAM, unidades de discos, monitor) existen solo como puente entre el procesador y el ususario. -\textbf{Ron White en How Computers Work.}
+		\end{definition}
+		
+		\subsection{Actualmente existen 3 marcas de procesadores}
+			\begin{itemize}
+				\item Intel
+				\item AMD
+				\item Cyrix
+			\end{itemize}
+%--------------------------------------------------------------------------	
+	\section{La memoria de la computadora}
+		La principal tarea de la $\underline{CPU}$ es seguir las instrucciones codificadas en los programas. Entonces, la computadora necesita un lugar donde almacenar el resto del progama y los datos hasta que el procesador esté listo. Para eso esta la \textbf{RAM}.
+		
+		\begin{definition}
+			La RAM (random access memory, memoria de acceso aleatorio) es el tipo más común de almacenamiento primario, o de memoria.
+		\end{definition}
+		
+%-----------------------------------------------------------------------
+	\section{La placa base}
+		Es un conjunto de dispositivos que se relacionan entre sí, para funcionar como un todo. Para que estos dispositivos se puedan relacionar entre sí, tiene que existir un componente que funcione como un factor común, es decir que todos los dispositivos puedan interactuar en uno solo
+	\section{Ejercicios}
+	\begin{enumerate}
+		\item \textbf{Explica.  ¿De que esta formado un sistema computación?}\\
+			Todo sistema de cómputo está formado por dos partes funtamentales, \textbf{Hardware y Software}
+		
+		\item  \textbf{¿Cuáles son los objetivos de las conexiones frontales de los ordenadores?}\\
+		Es un conjunto de pines que tienen como finalidad encender el ordenador encender las luces frontales del gabinete, hacer funcionar el botón de reset y en algunas placas hacer funcionar la bocina interna de la computadora.\\
+		
+		\item \textbf{Realizar esa conexión de USB frontal, respetando los colores con sus valores}
+			\begin{table}[htbp]
+				\centering
+				\begin{tabular}{c c c c c c c c c}
+					 &  & USB 1 &  &  &  & USB 2 &  & \\
+					Color de cables &  & $\longrightarrow$ & \cellcolor{gray} &  & \cellcolor{gray} & $\longleftarrow$ &  & Color de cables \\
+					& & & & & & & & \\
+					 & (+5V) PWR &  $\longrightarrow$  & \cellcolor{gray} &  & \cellcolor{gray} & $\longleftarrow$ & (+5V) PWR &  \\
+					& & & & & & & & \\
+					 & (-) Datos & $\longrightarrow$ & \cellcolor{gray} &  & \cellcolor{gray} & $\longleftarrow$ & (-) Datos &  \\
+					& & & & & & & & \\
+					 & (+) Datos & $\longrightarrow$ & \cellcolor{gray} &  & \cellcolor{gray} & $\longleftarrow$ & (+) Datos &  \\
+					& & & & & & & & \\
+					 & (+) GND & $\longrightarrow$ & \cellcolor{gray} &  & \cellcolor{gray} & $\longleftarrow$ & (+) GND &  \\
+					& & & & & & & & \\
+					 &  &  &  &  & \cellcolor{gray} & $\longleftarrow$ & Vacio &  \\
+				\end{tabular}
+				
+			\end{table}
+		\clearpage
+		
+		
+		\item \textbf{¿Qué incluye en el chasis del ordenador?}\\
+		En el ámbito de la informática, el gabinete es el armazón que contiene los principales componentes de hardware de una computadora\\
+		\item \textbf{Tipos de corrientes electricas.  ¿Cuál es la corriente que utiliza el ordenador?}\\
+		Corriente Alterna y Corriente Continua\\
+		El ordenador utiliza la Corriente Continua\\
+	\end{enumerate}
+		\clearpage
+	\section{Unidades de Almacenamiento}
+	
+		\begin{table}[htbp]
+			\begin{tabular}{p{3cm}!{\color{skyblue6}\vrule} p{9cm} |}
+				
+				\multicolumn{2}{c}
+				{\cellcolor{skyblue6}
+					{
+						\textcolor{white}
+							{
+								\textbf{Unidades de medidas}
+							}
+					}
+				
+				} \\ 
+				
+				\arrayrulecolor{white}\noalign{\hrule height 1pt}
+				\cellcolor{skyblue6}
+				{\textcolor{white}
+					{
+						\textbf{Bit}
+					}
+				
+				} 
+				& 0 o 1 (Dígito binario que represetna la unidad minima de información que en conjunto forman el \textcolor{red}
+				{
+					\textbf{lenguaje binario}
+				}.) \\ \noalign{\hrule height 1pt}
+				
+				\cellcolor{skyblue6}%Define el color de las celdas
+				{
+					\textcolor{white}%Define el color del texto
+					{
+						\textbf{Byte}%coloca el texto en negrita
+					}
+				} 
+				& \cellcolor{azulclaro}{Un carácter (8 bits).}\\ \noalign{\hrule height 1pt}
+				
+				\cellcolor{skyblue6}
+				{
+					\textcolor{white}
+					{
+						\textbf{Kilobyte (kb)}
+					}
+				} 
+				& 1024 caracteres I(1024 bytes). Un documento de texto.\\  \noalign{\hrule height 1pt }
+				
+				\cellcolor{skyblue6}
+				{\textcolor{white}
+					{
+						\textbf{Megabyte (Mb)}
+					}
+				} 
+				& \cellcolor{azulclaro}{(1024)(1024) caracteres = 1024 Kb. Una canción.} \\ \noalign{\hrule height 1pt}
+				
+				\cellcolor{skyblue6}
+				{
+					\textcolor{white}
+					{
+						\textbf{Gigabyte (Gb)}
+					}
+				} 
+				& (1024)(1024)(1024) caracteres = 1024 Mb. Un video, una película.\\ \noalign{\hrule height 1pt}
+				
+				\cellcolor{skyblue6}
+				{
+					\textcolor{white}
+					{
+						\textbf{Terabyte (Tb)}
+					}
+				} 
+				& \cellcolor{azulclaro}{(1024)(1024)(1024)(1024) caracteres = 1024 Gb. Una aplicación multimedia.}\\ \noalign{\hrule height 1pt}
+				
+			\end{tabular}
+		\end{table}
+	
+\end{document}

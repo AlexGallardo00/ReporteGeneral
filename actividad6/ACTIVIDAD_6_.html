@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Actividad 6</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			body
+			{
+				background-color: #000;
+			}
+			h1
+			{
+				text-align: center;
+				color: #fff;
+				text-shadow: 2px 2px #000;
+			}
+			form
+			{
+				width: 35%;
+				margin:auto;
+				background-color: #001F50;
+				padding: 5%;
+				box-shadow: 5px 5px 5px gray;
+				text-align: justify;
+			}
+			input[type=text] {
+			  width: 70%;
+			  padding: 2px 20px;
+			  float: right;
+
+			  box-sizing: border-box;
+			  margin-right: 10%;
+			}
+			input[type=submit]
+			{
+				width: 20%;
+				border-radius: 20px;
+				box-shadow: 2px 2px 2px #ddd;
+				float: right;
+				margin-right: 45%;
+			}
+			input[type=submit]:hover
+			{
+				background-color: #190192 ;
+				color: white;
+				transition: 0.5s;
+
+			}
+			p
+			{
+				color: #fff;
+				font-family: Helvetica;
+				font-size: 12pt;
+				font-style:
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Formulario de registro</h1>
+		<form action=""method="get">
+			<p>
+			<b>Nombre:</b> <input type="text" name="nombre" placeholder="Nombre" maxlength="50"/>
+			</p>
+			<p>
+			<b>Apellidos:</b> <input type="text" name="apellidos" placeholder="Apellidos" maxlength="50"/>
+			</p>
+			<p>
+			<b>Sexo:</b> <input type="radio" name="sexo" value="h"/>Hombre<input type="radio" name="sexo" value="m"/>Mujer
+			</p>
+			<p>
+			<b>Correo:</b> <input type="text" name="correo" placeholder="alguien@example.com" maxlength="100"/>
+			</p>
+			<p>
+			<input type="checkbox" name="info" checked="checked"/>Deseo recibir información sobre novedades y ofertas
+			</p>
+			<p>
+			<input type="checkbox" name="condiciones"/> Declaro haber leido y aceptarlas condiciones generales del progframa y la normativa sobre protección de datos
+			</p>
+			<p>
+			<input type="submit" value="Enviar"/>
+			</p>
+		</form>
+	</body>
+</html>
